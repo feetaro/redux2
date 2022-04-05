@@ -16,7 +16,7 @@ const Todo = (props) => {
       <button onClick={() => addTask(task)}>Add Task</button>
       <div>
         {todo.map((item) => (
-          <h5>{item.title}</h5>
+          <h5 key={item.id}>{item.title}</h5>
         ))}
       </div>
     </>

@@ -18,8 +18,6 @@ export const reducer = (state = initState, { type, payload }) => {
         counter: state.counter - payload
       };
     case ADD_TASK:
-      console.log(state);
-
       return {
         ...state,
         todo: [...state.todo, payload]
